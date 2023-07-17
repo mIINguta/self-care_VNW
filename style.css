@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+header, header ul,.banner, .apresentacao, .cards, section, footer, div,.inferior-footer nav>ul
+{    display: flex;
+    align-items: center;
+}
+header, .apresentacao{
+    justify-content: space-between;
+    padding: 15px 100px;
+}
+header ul, ul{
+    list-style: none;
+    width: 10vw;
+    justify-content: space-between;
+}
+header li img{
+    width: 1.5vw;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.banner{
+    justify-content: center;
+    background-color: #ADDE87;
+    background-image: url("imagens/background-banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.banner img{
+    width: 38vw;
+    height: 33vh;
+ }
+ .apresentacao{
+    box-shadow: 1px 0px 1px #A5A1A1
+ }
+ .cards{
+    flex-direction: column;
+ }
+ .cards > section{
+    padding: 10px 0px;
+    justify-content: space-around;
+    width: 100vw;
+    flex-wrap: wrap;
+ }
+ footer{
+   flex-direction: column;
+   background-color: #F9F9F9;
+   box-shadow: 1px 1px 1px #A5A1A1;
+ }
+ footer div{
+    width: 100vw;
+    justify-content: space-between;
+    padding: 15px 100px;
+ }
+ form button, form input{
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 4%;
+ }
+ form input{
+    width: 20vw;
+ }
+ form button{
+    background-color: #5CA720;
+    color: #FFFFFF;
+ }
+ form fieldset{
+   border: none;
+ }
+ .superior-footer{
+    box-shadow: 0px 0px 1px #A5A1A1;
+    height: 15vw;
+    font-weight: 400;
+ }
+.nav-footer-text li{
+    width: 20vw;
+}
+.icons-redes-sociais ul{
+    width: 7vw;
+}
+.icons-pagamentos ul{
+    width: 20vw;
+    justify-content: space-around;
+}
+
+@Media (max-width: 700px){
+    .banner img{
+        width: 80vw;
+        height: 20vh;
+     }
+     header, .apresentacao{
+        padding: 10px 0px;
+     }
+     .apresentacao{
+        justify-content: space-evenly;
+     }
+     header{
+        justify-content: space-around;
+     }
+     header ul{
+        width: 20vw;
+     }
+     header ul img{
+        width: 4vw;
+     }
+     .cards{
+        align-items: flex-start;
+
+     }
+     .cards section {
+        justify-content: space-around;
+    }
+      .superior-footer{
+         height: 50vh;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 35px;
+      }
+      .inferior-footer{
+         height: 14vh;
+         padding: 0;
+         justify-content: space-around;
+      }
+      form button, form input{
+         display: block;
+         width: 80vw;
+      }
+      .icons-pagamentos ul{
+         width: 50vw;
+      }
+      .icons-redes-sociais ul{
+         width: 25vw;
+}
+      footer img{
+         width: 10vw;
+      }
+}
